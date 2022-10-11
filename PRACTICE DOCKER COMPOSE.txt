@@ -1,0 +1,21 @@
+PRACTICE DOCKER COMPOSE
+
+1. View active containers.
+	docker-compose ps
+2. View container logs of the container mysql.
+	docker-compose logs mysql
+3. Pause running the adminer container.
+	docker-compose pause adminer
+4. Resume the adminer container.
+	docker-compose unpause adminer
+5. Stop all containers without removing them.
+	docker-compose stop
+6. Start stopped containers.
+	docker-compose start
+7. Remove stopped containers.
+	docker-compose stop
+	docker-compose rm
+8. Launch the Compose in the detached mode for file myconfig.yml.
+	docker-compose -f ./myconfigfile.yml up -d
+9. Stop and remove running containers, images, volumes, and networks with one command.
+	docker-compose down
